@@ -256,7 +256,7 @@ article.active {
 }
 
 .has-scrollbar::-webkit-scrollbar {
-  width: 5px; /* for vertical scrollbar */
+  width: 1px; /* for vertical scrollbar */
   height: 5px; /* for horizontal scrollbar */
 }
 
@@ -315,10 +315,9 @@ main {
 \*-----------------------------------*/
 
 .sidebar {
+  width: 30220px;
   margin-bottom: 15px;
   max-height: 112px;
-  overflow: hidden;
-  transition: var(--transition-2);
 }
 
 .sidebar.active { max-height: 405px; }
@@ -1555,7 +1554,7 @@ textarea.form-input::-webkit-resizer { display: none; }
    * REUSED STYLE
    */
 
-  .sidebar, article { width: 700px; }
+  .sidebar, article { width: 100px; }
 
   .has-scrollbar::-webkit-scrollbar-button { width: 100px; }
 
@@ -1674,7 +1673,7 @@ textarea.form-input::-webkit-resizer { display: none; }
    */
 
   .sidebar, article {
-    width: 950px;
+    width: 1950px;
     box-shadow: var(--shadow-5);
   }
 
@@ -1688,7 +1687,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .main-content {
     position: relative;
-    width: max-content;
+    width: 300px;
     margin: auto;
   }
 

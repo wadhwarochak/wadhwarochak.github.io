@@ -315,9 +315,10 @@ main {
 \*-----------------------------------*/
 
 .sidebar {
-  width: 30220px;
   margin-bottom: 15px;
   max-height: 112px;
+  overflow: hidden;
+  transition: var(--transition-2);
 }
 
 .sidebar.active { max-height: 405px; }
@@ -1554,7 +1555,7 @@ textarea.form-input::-webkit-resizer { display: none; }
    * REUSED STYLE
    */
 
-  .sidebar, article { width: 100px; }
+  .sidebar, article { width: 700px; }
 
   .has-scrollbar::-webkit-scrollbar-button { width: 100px; }
 
@@ -1673,7 +1674,7 @@ textarea.form-input::-webkit-resizer { display: none; }
    */
 
   .sidebar, article {
-    width: 1950px;
+    width: 950px;
     box-shadow: var(--shadow-5);
   }
 
@@ -1687,7 +1688,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .main-content {
     position: relative;
-    width: 300px;
+    width: max-content;
     margin: auto;
   }
 

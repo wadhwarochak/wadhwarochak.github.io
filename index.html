@@ -1002,24 +1002,32 @@ Their ability to deliver high-quality results on time is impressive, and their a
 
 <br><br><br><br>
 
-<form action="https://formsubmit.co/rochak.wadhwa@gmail.com" method="POST">
-  <label for="name">Name:</label><br>
-  <input type="text" name="name" required><br><br>
 
-  <label for="email">Email:</label><br>
-  <input type="email" name="email" required><br><br>
 
-  <label for="message">Message:</label><br>
-  <textarea name="message" rows="5" required></textarea><br><br>
+        <section class="contact-form">
 
-  <!-- Optional: Redirect after submit -->
-  <input type="hidden" name="_next" value="https://yourdomain.com/thank-you.html">
+          <h3 class="h3 form-title">Contact Form</h3>
 
-  <!-- Optional: Add subject to email -->
-  <input type="hidden" name="_subject" value="New message from your website!">
+          <form action="https://formsubmit.co/rochak.wadhwa@gmail.com" method="POST" class="form" data-form>
 
-  <button type="submit">Send Message</button>
-</form>
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+
 
         </section>
 		        <section class="mapbox" data-mapbox>

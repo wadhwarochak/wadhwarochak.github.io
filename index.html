@@ -531,7 +531,6 @@ Their ability to deliver high-quality results on time is impressive, and their a
           <ul class="skills-list content-card">
 
 
-
 <style>
 .skills-grid {
   color: #d4af37;
@@ -540,74 +539,68 @@ Their ability to deliver high-quality results on time is impressive, and their a
   padding: 12px 16px;
 }
 
-/* Desktop: Grid */
-@media (min-width: 601px) {
-  .skills-grid {
-    display: grid;
-    grid-template-columns: 160px 1fr;
-    row-gap: 10px;
-    column-gap: 16px;
-  }
+/* Each row */
+.skill-row {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  column-gap: 16px;
+  margin-bottom: 10px;
 }
 
-/* Mobile: TRUE table layout */
+/* Mobile */
 @media (max-width: 600px) {
-  .skills-grid {
-    display: table;
-    width: 100%;
-    border-collapse: collapse;
+  .skill-row {
+    grid-template-columns: 90px 1fr;
+    column-gap: 12px;
   }
 
-  .skills-grid > div {
-    display: table-cell;
-    vertical-align: top;
-    padding-bottom: 10px;
-  }
-
-  /* Label column */
-  .skills-grid > div:nth-child(odd) {
-    width: 90px;
-    white-space: nowrap;
-    font-weight: 600;
-  }
-
-  /* Value column */
-  .skills-grid > div:nth-child(even) {
-    width: auto;
-    word-break: break-word;
-  }
-
-  .skills-grid h3 {
+  .skill-row h3 {
     margin: 0;
     font-size: 0.95rem;
     line-height: 1.35;
+  }
+
+  .skill-label {
+    white-space: nowrap;
+    font-weight: 600;
   }
 }
 </style>
 
 <div class="skills-grid">
 
-  <div><h3 class="h3 timeline-item-title">Code:</h3></div>
-  <div><h3 class="h3 timeline-item-title">SQL, Python & Bash</h3></div>
+  <div class="skill-row">
+    <div class="skill-label"><h3 class="h3 timeline-item-title">Code:</h3></div>
+    <div><h3 class="h3 timeline-item-title">SQL, Python & Bash</h3></div>
+  </div>
 
-  <div><h3 class="h3 timeline-item-title">API:</h3></div>
-  <div><h3 class="h3 timeline-item-title">Postman & Shell/Python</h3></div>
+  <div class="skill-row">
+    <div class="skill-label"><h3 class="h3 timeline-item-title">API:</h3></div>
+    <div><h3 class="h3 timeline-item-title">Postman & Shell/Python</h3></div>
+  </div>
 
-  <div><h3 class="h3 timeline-item-title">AWS:</h3></div>
-  <div><h3 class="h3 timeline-item-title">S3, Lambda, CFT, Cloudwatch, EMT</h3></div>
+  <div class="skill-row">
+    <div class="skill-label"><h3 class="h3 timeline-item-title">AWS:</h3></div>
+    <div><h3 class="h3 timeline-item-title">S3, Lambda, CFT, Cloudwatch, EMT</h3></div>
+  </div>
 
-  <div><h3 class="h3 timeline-item-title">DBMS:</h3></div>
-  <div><h3 class="h3 timeline-item-title">MS SQL, MySQL, Postgresql</h3></div>
+  <div class="skill-row">
+    <div class="skill-label"><h3 class="h3 timeline-item-title">DBMS:</h3></div>
+    <div><h3 class="h3 timeline-item-title">MS SQL, MySQL, Postgresql</h3></div>
+  </div>
 
-  <div><h3 class="h3 timeline-item-title">Tools:</h3></div>
-  <div><h3 class="h3 timeline-item-title">Putty, Postman, Winscp</h3></div>
+  <div class="skill-row">
+    <div class="skill-label"><h3 class="h3 timeline-item-title">Tools:</h3></div>
+    <div><h3 class="h3 timeline-item-title">Putty, Postman, Winscp</h3></div>
+  </div>
 
-  <div><h3 class="h3 timeline-item-title">Tracker:</h3></div>
-  <div><h3 class="h3 timeline-item-title">Slack, Figma, Jira, Bugzilla, TestLink, Wiki</h3></div>
+  <div class="skill-row">
+    <div class="skill-label"><h3 class="h3 timeline-item-title">Tracker:</h3></div>
+    <div><h3 class="h3 timeline-item-title">Slack, Figma, Jira, Bugzilla, TestLink, Wiki</h3></div>
+  </div>
 
 </div>
 
-          </ul>
 
         </section>
 

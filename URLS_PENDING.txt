@@ -1,0 +1,9 @@
+Analytics-SQL-Finance/
+Automation-AWS-CloudFormation/
+Automation-AWS-Lambda/
+Automation-AWS-SNS-SQS/
+Automation-ETL-Testing-Python/
+Automation-Utilities-In-Bash/
+Automation-Utilities-In-Python/
+Engineering-AWS-Glue-ETL/
+Engineering-SQL-Datawarehouse/

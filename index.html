@@ -898,22 +898,37 @@ Their ability to deliver high-quality results on time is impressive, and their a
       <article class="certificates" data-page="certificates">
 
 
+<br><br><br>
+
 <section>
 
   <style>
+    /* Reset anchor underline */
+    .clients-list a {
+      text-decoration: none;
+      border: none;
+      display: inline-block;
+    }
+
     /* Desktop / Laptop */
     .clients-list img {
-      width: 120px;
-      height: 80px;
+      width: 140px;
+      height: 90px;
       object-fit: contain;
       display: block;
+      transition: transform 0.2s ease;
+    }
+
+    /* Optional hover effect */
+    .clients-list img:hover {
+      transform: scale(1.05);
     }
 
     /* Mobile */
     @media (max-width: 768px) {
       .clients-list img {
-        width: 90px;
-        height: 60px;
+        width: 100px;
+        height: 70px;
       }
     }
   </style>
@@ -921,20 +936,20 @@ Their ability to deliver high-quality results on time is impressive, and their a
   <ul class="clients-list has-scrollbar">
 
     <li>
-      <a href="https://www.hackerrank.com/profile/rochakwadhwa">
-        <img src="./assets/images/SQL22.png" alt="client logo">
+      <a href="https://www.hackerrank.com/profile/rochakwadhwa" target="_blank">
+        <img src="./assets/images/SQL22.png" alt="HackerRank SQL Badge">
       </a>
     </li>
 
     <li>
-      <a href="https://www.hackerrank.com/profile/rochakwadhwa">
-        <img src="./assets/images/SQL-LeetCode.png" alt="client logo">
+      <a href="https://www.hackerrank.com/profile/rochakwadhwa" target="_blank">
+        <img src="./assets/images/SQL-LeetCode.png" alt="LeetCode SQL Badge">
       </a>
     </li>
 
     <li>
-      <a href="https://leetcode.com/u/rochakwadhwa/">
-        <img src="./assets/images/PD22.png" alt="client logo">
+      <a href="https://leetcode.com/u/rochakwadhwa/" target="_blank">
+        <img src="./assets/images/PD22.png" alt="LeetCode Problem Solving Badge">
       </a>
     </li>
 

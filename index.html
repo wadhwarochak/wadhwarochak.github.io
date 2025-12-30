@@ -903,60 +903,149 @@ Their ability to deliver high-quality results on time is impressive, and their a
 <section>
 
   <style>
-    /* Reset anchor underline */
+    /* ===============================
+       CERTIFICATE PANEL
+    ================================ */
+
+    .cert-panel {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 26px 18px;
+      border-radius: 26px;
+      background: linear-gradient(180deg, #1c1c1c, #0b0b0b);
+      border: 3px solid #cfa54a;
+      box-shadow:
+        0 20px 50px rgba(0,0,0,.85),
+        inset 0 1px 0 rgba(255,255,255,.06);
+    }
+
+    /* ===============================
+       GRID
+    ================================ */
+
+    .clients-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+      gap: 30px;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      justify-items: center;
+    }
+
     .clients-list a {
       text-decoration: none;
-      border: none;
-      display: inline-block;
     }
 
-    /* Desktop / Laptop */
-    .clients-list img {
-      width: 140px;
-      height: 90px;
-      object-fit: contain;
+    /* ===============================
+       BADGE CARD
+    ================================ */
+
+    .badge-card {
+      width: 110px;
+      height: 110px;
+      padding: 5px;
+      border-radius: 22px;
+      background: linear-gradient(145deg, #e8c66a, #b89135);
+      box-shadow: 0 12px 28px rgba(0,0,0,.65);
+    }
+
+    .badge-inner {
+      width: 100%;
+      height: 100%;
+      border-radius: 16px;
+      background: radial-gradient(circle at top, #222, #0a0a0a);
+
+      /* 🔑 This is the key */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px; /* breathing space */
+      box-sizing: border-box;
+    }
+
+    /* ===============================
+       ICON – MAX SIZE IN BOX
+    ================================ */
+
+    .badge-inner img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain; /* never distort */
       display: block;
-      transition: transform 0.2s ease;
+      filter: drop-shadow(0 4px 8px rgba(0,0,0,.8));
     }
 
-    /* Optional hover effect */
-    .clients-list img:hover {
-      transform: scale(1.05);
-    }
+    /* ===============================
+       MOBILE
+    ================================ */
 
-    /* Mobile */
-    @media (max-width: 768px) {
-      .clients-list img {
-        width: 100px;
-        height: 70px;
+    @media (max-width: 600px) {
+      .badge-card {
+        width: 95px;
+        height: 95px;
+      }
+
+      .badge-inner {
+        padding: 8px;
       }
     }
   </style>
 
-  <ul class="clients-list has-scrollbar">
+  <div class="cert-panel">
+    <ul class="clients-list">
 
-    <li>
-      <a href="https://www.hackerrank.com/profile/rochakwadhwa" target="_blank">
-        <img src="./assets/images/SQL22.png" alt="HackerRank SQL Badge">
-      </a>
-    </li>
+      <li>
+        <a href="https://www.hackerrank.com/profile/rochakwadhwa" target="_blank">
+          <div class="badge-card">
+            <div class="badge-inner">
+              <img src="./assets/images/SQL22.png" alt="HackerRank SQL Gold">
+            </div>
+          </div>
+        </a>
+      </li>
 
-    <li>
-      <a href="https://www.hackerrank.com/profile/rochakwadhwa" target="_blank">
-        <img src="./assets/images/SQL-LeetCode.png" alt="LeetCode SQL Badge">
-      </a>
-    </li>
+      <li>
+        <a href="https://www.hackerrank.com/profile/rochakwadhwa" target="_blank">
+          <div class="badge-card">
+            <div class="badge-inner">
+              <img src="./assets/images/PYTHON22.png" alt="HackerRank Python Gold">
+            </div>
+          </div>
+        </a>
+      </li>
 
-    <li>
-      <a href="https://leetcode.com/u/rochakwadhwa/" target="_blank">
-        <img src="./assets/images/PD22.png" alt="LeetCode Problem Solving Badge">
-      </a>
-    </li>
+      <li>
+        <a href="https://leetcode.com/u/rochakwadhwa/" target="_blank">
+          <div class="badge-card">
+            <div class="badge-inner">
+              <img src="./assets/images/SQL-LeetCode.png" alt="LeetCode SQL Badge">
+            </div>
+          </div>
+        </a>
+      </li>
 
-  </ul>
+      <li>
+        <a href="https://leetcode.com/u/rochakwadhwa/" target="_blank">
+          <div class="badge-card">
+            <div class="badge-inner">
+              <img src="./assets/images/PD22.png" alt="Problem Solving Badge">
+            </div>
+          </div>
+        </a>
+      </li>
+
+    </ul>
+  </div>
 
 </section>
 
+
+
+
+
+
+<br><br><br><br><br>
 		
 		
 		

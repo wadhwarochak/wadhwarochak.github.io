@@ -904,19 +904,23 @@ Their ability to deliver high-quality results on time is impressive, and their a
 
   <style>
     /* ===============================
-       CERTIFICATE PANEL
+       GLASS CERT SECTION
     ================================ */
 
     .cert-panel {
       max-width: 900px;
       margin: 0 auto;
-      padding: 26px 18px;
-      border-radius: 26px;
-      background: linear-gradient(180deg, #1c1c1c, #0b0b0b);
-      border: 3px solid #cfa54a;
+      padding: 34px 18px;
+
+      background: radial-gradient(circle at top, #1b1b1b, #080808);
+
+      /* 🔑 thin outer yellow */
+      border-radius: 28px;
+      border: 1px solid rgba(207, 165, 74, 0.45);
+
       box-shadow:
-        0 20px 50px rgba(0,0,0,.85),
-        inset 0 1px 0 rgba(255,255,255,.06);
+        0 18px 45px rgba(0,0,0,.75),
+        inset 0 0 0 1px rgba(255, 215, 140, 0.12);
     }
 
     /* ===============================
@@ -926,7 +930,7 @@ Their ability to deliver high-quality results on time is impressive, and their a
     .clients-list {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
-      gap: 30px;
+      gap: 32px;
       list-style: none;
       padding: 0;
       margin: 0;
@@ -938,42 +942,45 @@ Their ability to deliver high-quality results on time is impressive, and their a
     }
 
     /* ===============================
-       BADGE CARD
+       GLASS BADGE CARD
     ================================ */
 
     .badge-card {
       width: 110px;
-      height: 110px;
-      padding: 5px;
-      border-radius: 22px;
-      background: linear-gradient(145deg, #e8c66a, #b89135);
-      box-shadow: 0 12px 28px rgba(0,0,0,.65);
-    }
+      height: 90px;
+      border-radius: 20px;
 
-    .badge-inner {
-      width: 100%;
-      height: 100%;
-      border-radius: 16px;
-      background: radial-gradient(circle at top, #222, #0a0a0a);
+      background: rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
 
-      /* 🔑 This is the key */
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: 10px; /* breathing space */
-      box-sizing: border-box;
+
+      box-shadow:
+        0 10px 30px rgba(0,0,0,.55),
+        inset 0 0 0 1px rgba(255, 205, 120, .25);
+
+      transition: transform .35s ease, box-shadow .35s ease;
+    }
+
+    .badge-card:hover {
+      transform: translateY(-6px) scale(1.05);
+      box-shadow:
+        0 18px 45px rgba(0,0,0,.7),
+        0 0 22px rgba(255, 190, 90, .55);
     }
 
     /* ===============================
-       ICON – MAX SIZE IN BOX
+       ICON
     ================================ */
 
-    .badge-inner img {
-      width: 100%;
-      height: 100%;
-      object-fit: contain; /* never distort */
-      display: block;
-      filter: drop-shadow(0 4px 8px rgba(0,0,0,.8));
+    .badge-card img {
+      width: 64px;
+      height: auto;
+      object-fit: contain;
+      filter: drop-shadow(0 4px 8px rgba(0,0,0,.7));
     }
 
     /* ===============================
@@ -982,12 +989,12 @@ Their ability to deliver high-quality results on time is impressive, and their a
 
     @media (max-width: 600px) {
       .badge-card {
-        width: 95px;
-        height: 95px;
+        width: 100px;
+        height: 78px;
       }
 
-      .badge-inner {
-        padding: 8px;
+      .badge-card img {
+        width: 56px;
       }
     }
   </style>
@@ -998,9 +1005,7 @@ Their ability to deliver high-quality results on time is impressive, and their a
       <li>
         <a href="https://www.hackerrank.com/profile/rochakwadhwa" target="_blank">
           <div class="badge-card">
-            <div class="badge-inner">
-              <img src="./assets/images/SQL22.png" alt="HackerRank SQL Gold">
-            </div>
+            <img src="./assets/images/SQL22.png" alt="HackerRank SQL Gold">
           </div>
         </a>
       </li>
@@ -1008,9 +1013,7 @@ Their ability to deliver high-quality results on time is impressive, and their a
       <li>
         <a href="https://www.hackerrank.com/profile/rochakwadhwa" target="_blank">
           <div class="badge-card">
-            <div class="badge-inner">
-              <img src="./assets/images/PYTHON22.png" alt="HackerRank Python Gold">
-            </div>
+            <img src="./assets/images/PYTHON22.png" alt="HackerRank Python Gold">
           </div>
         </a>
       </li>
@@ -1018,9 +1021,7 @@ Their ability to deliver high-quality results on time is impressive, and their a
       <li>
         <a href="https://leetcode.com/u/rochakwadhwa/" target="_blank">
           <div class="badge-card">
-            <div class="badge-inner">
-              <img src="./assets/images/SQL-LeetCode.png" alt="LeetCode SQL Badge">
-            </div>
+            <img src="./assets/images/SQL-LeetCode.png" alt="LeetCode SQL Badge">
           </div>
         </a>
       </li>
@@ -1028,9 +1029,7 @@ Their ability to deliver high-quality results on time is impressive, and their a
       <li>
         <a href="https://leetcode.com/u/rochakwadhwa/" target="_blank">
           <div class="badge-card">
-            <div class="badge-inner">
-              <img src="./assets/images/PD22.png" alt="Problem Solving Badge">
-            </div>
+            <img src="./assets/images/PD22.png" alt="Problem Solving Badge">
           </div>
         </a>
       </li>
@@ -1039,8 +1038,6 @@ Their ability to deliver high-quality results on time is impressive, and their a
   </div>
 
 </section>
-
-
 
 
 

@@ -913,22 +913,28 @@ Their ability to deliver high-quality results on time is impressive, and their a
 
 
 <br><br><br>
+
+
 <section>
 
   <style>
     /* ===============================
-       CERT PANEL – FINAL
+       CERT PANEL – FINAL (MOBILE SAFE)
     ================================ */
 
     .cert-panel {
-      width: fit-content;                 /* 🔑 hug content */
+      width: fit-content;                 /* hugs content on desktop */
+      max-width: 100%;                    /* prevents mobile overflow */
       margin: 0 auto;
-      padding: 14px 16px;                 /* equal left/right */
+      padding: 14px 16px;
 
       background: linear-gradient(180deg, #151515, #0f0f0f);
       border-radius: 14px;
       border: 1px solid rgba(255,255,255,0.06);
       box-shadow: 0 8px 20px rgba(0,0,0,.55);
+
+      overflow-x: auto;                   /* mobile-safe scroll */
+      -webkit-overflow-scrolling: touch;
     }
 
     /* ===============================
@@ -936,8 +942,9 @@ Their ability to deliver high-quality results on time is impressive, and their a
     ================================ */
 
     .clients-list {
-      display: inline-grid;
+      display: grid;
       grid-auto-flow: column;
+      grid-auto-columns: max-content;
       gap: 14px;
 
       list-style: none;
@@ -946,12 +953,13 @@ Their ability to deliver high-quality results on time is impressive, and their a
     }
 
     .clients-list li {
-      margin: 0;
       padding: 0;
+      margin: 0;
     }
 
     .clients-list a {
       text-decoration: none;
+      display: block;
     }
 
     /* ===============================
@@ -963,7 +971,7 @@ Their ability to deliver high-quality results on time is impressive, and their a
       height: 74px;
       border-radius: 12px;
 
-      background: rgba(255, 255, 255, 0.05);
+      background: rgba(255,255,255,0.05);
       backdrop-filter: blur(8px);
 
       display: flex;
@@ -975,6 +983,7 @@ Their ability to deliver high-quality results on time is impressive, and their a
         inset 0 0 0 1px rgba(255,255,255,.06);
 
       transition: transform .25s ease, box-shadow .25s ease;
+      will-change: transform;
     }
 
     .badge-card:hover {
@@ -994,7 +1003,7 @@ Their ability to deliver high-quality results on time is impressive, and their a
     }
 
     /* ===============================
-       MOBILE
+       MOBILE TUNING
     ================================ */
 
     @media (max-width: 600px) {
@@ -1015,6 +1024,14 @@ Their ability to deliver high-quality results on time is impressive, and their a
         width: 44px;
       }
     }
+
+    /* ===============================
+       OPTIONAL – HIDE SCROLLBAR
+    ================================ */
+
+    .cert-panel::-webkit-scrollbar {
+      height: 0;
+    }
   </style>
 
   <div class="cert-panel">
@@ -1023,7 +1040,7 @@ Their ability to deliver high-quality results on time is impressive, and their a
       <li>
         <a href="https://www.hackerrank.com/profile/rochakwadhwa" target="_blank">
           <div class="badge-card">
-            <img src="./assets/images/SQL22.png" alt="HackerRank SQL Gold">
+            <img src="./assets/images/SQL22.png" alt="HackerRank SQL Gold" loading="lazy">
           </div>
         </a>
       </li>
@@ -1031,7 +1048,7 @@ Their ability to deliver high-quality results on time is impressive, and their a
       <li>
         <a href="https://www.hackerrank.com/profile/rochakwadhwa" target="_blank">
           <div class="badge-card">
-            <img src="./assets/images/PYTHON22.png" alt="HackerRank Python Gold">
+            <img src="./assets/images/PYTHON22.png" alt="HackerRank Python Gold" loading="lazy">
           </div>
         </a>
       </li>
@@ -1039,7 +1056,7 @@ Their ability to deliver high-quality results on time is impressive, and their a
       <li>
         <a href="https://leetcode.com/u/rochakwadhwa/" target="_blank">
           <div class="badge-card">
-            <img src="./assets/images/SQL-LeetCode.png" alt="LeetCode SQL Badge">
+            <img src="./assets/images/SQL-LeetCode.png" alt="LeetCode SQL Badge" loading="lazy">
           </div>
         </a>
       </li>
@@ -1047,7 +1064,7 @@ Their ability to deliver high-quality results on time is impressive, and their a
       <li>
         <a href="https://leetcode.com/u/rochakwadhwa/" target="_blank">
           <div class="badge-card">
-            <img src="./assets/images/PD22.png" alt="Problem Solving Badge">
+            <img src="./assets/images/PD22.png" alt="Problem Solving Badge" loading="lazy">
           </div>
         </a>
       </li>
@@ -1056,7 +1073,6 @@ Their ability to deliver high-quality results on time is impressive, and their a
   </div>
 
 </section>
-
 
 
 

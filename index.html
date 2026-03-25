@@ -1022,6 +1022,17 @@ Their ability to deliver high-quality results on time is impressive, and their a
     .cert-panel::-webkit-scrollbar {
       height: 0;
     }
+    /* Soft blur (visible but unreadable) */
+.blog-banner-box img {
+  width: 100%;
+  display: block;
+
+  filter: blur(12px) brightness(0.95);
+  transform: scale(1.05);
+
+  pointer-events: none;
+  user-select: none;
+}
   </style>
 
   <div class="cert-panel">

@@ -1,0 +1,26 @@
+<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+<defs>
+<linearGradient id="grad" x1="8" y1="6" x2="32" y2="34" gradientUnits="userSpaceOnUse">
+<stop offset="0.259336" stop-color="#FFDB6E"/>
+<stop offset="1" stop-color="#FFBC5E"/>
+</linearGradient>
+</defs>
+
+<!-- outer box -->
+<rect x="4" y="4" width="32" height="32" rx="8"
+stroke="url(#grad)" stroke-width="1.6"/>
+
+<!-- strong lens (thicker + centered) -->
+<circle cx="18" cy="18" r="8"
+stroke="url(#grad)" stroke-width="2.2"/>
+
+<!-- handle -->
+<path d="M24 24L30 30"
+stroke="url(#grad)" stroke-width="2.2" stroke-linecap="round"/>
+
+<!-- bold centered tick -->
+<path d="M14 18l4.5 4.5 8-8"
+stroke="url(#grad)" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+
+</svg>

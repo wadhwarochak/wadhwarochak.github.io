@@ -1022,16 +1022,32 @@ Their ability to deliver high-quality results on time is impressive, and their a
     .cert-panel::-webkit-scrollbar {
       height: 0;
     }
-    /* Soft blur (visible but unreadable) */
+
+    /* Base image - almost clear */
 .blog-banner-box img {
   width: 100%;
   display: block;
 
-  filter: blur(12px) brightness(1);
-  transform: scale(1);
+  filter: blur(2px);   /* very light blur */
+  transform: scale(1.02);
 
   pointer-events: none;
   user-select: none;
+}
+
+/* Smart center masking */
+.blog-banner-box::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background: radial-gradient(
+    ellipse at center,
+    rgba(0,0,0,0.25) 0%,   /* center slightly hidden */
+    rgba(0,0,0,0.15) 35%,
+    rgba(0,0,0,0.05) 55%,
+    transparent 75%
+  );
 }
   </style>
 

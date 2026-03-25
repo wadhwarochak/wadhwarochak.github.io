@@ -1022,6 +1022,45 @@ Their ability to deliver high-quality results on time is impressive, and their a
     .cert-panel::-webkit-scrollbar {
       height: 0;
     }
+
+    /* ===============================
+     CERTIFICATE FULL PROTECTION
+  ============================== */
+
+  .blog-banner-box {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+  }
+
+  .blog-banner-box img {
+    width: 100%;
+    display: block;
+
+    filter: blur(30px) brightness(0.5) contrast(1.2);
+    transform: scale(1.2);
+
+    pointer-events: none;
+    user-select: none;
+    -webkit-user-drag: none;
+  }
+
+  .blog-banner-box::after {
+    content: "✔ Certified";
+    position: absolute;
+    inset: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+
+    background: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(6px);
+  }
   </style>
 
   <div class="cert-panel">

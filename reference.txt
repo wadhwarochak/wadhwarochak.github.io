@@ -1,0 +1,11 @@
+git config user.email "rochak.wadhwa@gmail.com"
+git config user.name "wadhwarochak"
+
+
+Practicing in QA Data with exposure to Engineering, Analytics, ETL, Automation & AWS
+
+• Quality Engineer with a strong foundation in SQL, Python, and Bash
+• Experienced in designing and executing automated test frameworks using Playwright and Pytest
+• Skilled in API testing, validation, and ensuring data accuracy across ETL workflows
+• Hands-on experience with AWS and GitHub Actions for CI/CD integration
+• Strong exposure to Data Engineering, Analytics, and Bash scripting for automation in fast-paced environments

@@ -139,7 +139,7 @@
     /* Make every category filter except "All" exactly the same width */
     .main-content article.projects .filter-list .filter-item:not(:first-child) button[data-filter-btn] {
       width: 145px !important;
-      min-width: 145px !important;
+      min-width: 160px !important;
       box-sizing: border-box !important;
       justify-content: center !important;
       text-align: center !important;
@@ -157,6 +157,23 @@
         width: 132px !important;
         min-width: 132px !important;
       }
+    }
+  </style>
+
+
+  <style>
+    /* Mobile category dropdown options */
+    .main-content article.projects .filter-select-box .select-list .select-item button[data-select-item] {
+      color: #e6e2da !important;
+      background: #252525 !important;
+      border: 1px solid transparent !important;
+      text-align: left !important;
+    }
+
+    .main-content article.projects .filter-select-box .select-list .select-item button[data-select-item]:hover {
+      color: #e7c47d !important;
+      background: #302a20 !important;
+      border-color: #92713a !important;
     }
   </style>
 
@@ -941,15 +958,19 @@ Their ability to deliver high-quality results on time is impressive, and their a
               </li>
 
               <li class="select-item">
-                <button data-select-item>SQL/Python</button>
+                <button data-select-item>Artificial Intelligence</button>
               </li>
 
               <li class="select-item">
-                <button data-select-item>SDET-QA</button>
+                <button data-select-item>QA-SDET</button>
               </li>
 
               <li class="select-item">
-                <button data-select-item>AWS</button>
+                <button data-select-item>Data Engineering</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>SQL, Python &amp; Bash</button>
               </li>
 
             </ul>

@@ -44,6 +44,122 @@
     }
   </style>
   
+
+  <style>
+    /* Clean, understated project filters */
+    .main-content article.projects .projects-intro {
+      color: #b7b7b7 !important;
+      font-size: 14px !important;
+      line-height: 1.6 !important;
+      margin: -7px 0 22px !important;
+    }
+
+    .main-content article.projects .filter-list {
+      display: flex !important;
+      align-items: center !important;
+      flex-wrap: wrap !important;
+      gap: 9px !important;
+      margin: 0 0 25px !important;
+      padding: 0 !important;
+    }
+
+    .main-content article.projects .filter-list .filter-item {
+      margin: 0 !important;
+      padding: 0 !important;
+    }
+
+    .main-content article.projects .filter-list .filter-item button[data-filter-btn] {
+      display: inline-flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      min-height: 38px !important;
+      min-width: 0 !important;
+      padding: 8px 16px !important;
+      border: 1px solid #92713a !important;
+      border-radius: 8px !important;
+      background: #252525 !important;
+      color: #e6e2da !important;
+      font-family: inherit !important;
+      font-size: 13px !important;
+      font-weight: 500 !important;
+      line-height: 1.2 !important;
+      letter-spacing: .1px !important;
+      text-transform: none !important;
+      box-shadow: none !important;
+      transform: none !important;
+      transition: background-color .18s ease, color .18s ease,
+                  border-color .18s ease !important;
+    }
+
+    .main-content article.projects .filter-list .filter-item button[data-filter-btn] ion-icon {
+      display: none !important;
+    }
+
+    .main-content article.projects .filter-list .filter-item button[data-filter-btn]:hover {
+      background: #302a20 !important;
+      color: #e7c47d !important;
+      border-color: #b18a45 !important;
+      box-shadow: none !important;
+      transform: none !important;
+    }
+
+    .main-content article.projects .filter-list .filter-item button[data-filter-btn].active {
+      background: #b18a45 !important;
+      color: #17140e !important;
+      border-color: #b18a45 !important;
+      font-weight: 600 !important;
+      box-shadow: none !important;
+    }
+
+    .main-content article.projects .filter-list .filter-item button[data-filter-btn].active ion-icon {
+      display: none !important;
+    }
+
+    .main-content article.projects .filter-list .filter-item button[data-filter-btn]:focus-visible {
+      outline: 2px solid #b18a45 !important;
+      outline-offset: 2px !important;
+    }
+
+    @media (max-width: 600px) {
+      .main-content article.projects .filter-list {
+        gap: 7px !important;
+        margin-bottom: 20px !important;
+      }
+
+      .main-content article.projects .filter-list .filter-item button[data-filter-btn] {
+        min-height: 36px !important;
+        padding: 7px 12px !important;
+        font-size: 12px !important;
+      }
+    }
+  </style>
+
+
+  <style>
+    /* Make every category filter except "All" exactly the same width */
+    .main-content article.projects .filter-list .filter-item:not(:first-child) button[data-filter-btn] {
+      width: 145px !important;
+      min-width: 145px !important;
+      box-sizing: border-box !important;
+      justify-content: center !important;
+      text-align: center !important;
+      white-space: nowrap !important;
+    }
+
+    /* Keep the All button compact */
+    .main-content article.projects .filter-list .filter-item:first-child button[data-filter-btn] {
+      width: auto !important;
+      min-width: 38px !important;
+    }
+
+    @media (max-width: 600px) {
+      .main-content article.projects .filter-list .filter-item:not(:first-child) button[data-filter-btn] {
+        width: 132px !important;
+        min-width: 132px !important;
+      }
+    }
+  </style>
+
 </head>
 
 <body>
@@ -780,6 +896,7 @@ Their ability to deliver high-quality results on time is impressive, and their a
 
         <header>
           <h2 class="h2 article-title">Projects</h2>
+          <p class="projects-intro">A collection of hands-on projects across Quality Engineering, Data and Cloud Technologies.</p>
         </header>
 
         <section class="projects">
@@ -791,16 +908,18 @@ Their ability to deliver high-quality results on time is impressive, and their a
             </li>
 
             <li class="filter-item">
-              <button data-filter-btn>SQL/Python</button>
+              <button data-filter-btn>Artificial Intelligence</button>
             </li>
 
             <li class="filter-item">
-              <button data-filter-btn>SDET-QA</button>
+              <button data-filter-btn>QA-SDET</button>
             </li>
             <li class="filter-item">
-              <button data-filter-btn>AWS</button>
+              <button data-filter-btn>Data Engineering</button>
             </li>
-
+            <li class="filter-item">
+              <button data-filter-btn>SQL, Python & Bash</button>
+            </li>
           </ul>
 
           <div class="filter-select-box">
